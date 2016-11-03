@@ -1,2 +1,2 @@
-# touch  创建文件
-cp 复制   -a移动全部文件
+#linux基础
+*touch 创建文字
