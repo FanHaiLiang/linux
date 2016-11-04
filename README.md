@@ -40,3 +40,19 @@
 # sudo passwd root 修改root密码
 # sudo deluser username 删除一个用户不善目录
 # sudo deluser username --remove-home 删除组中的用户连同目录一起
+# shutdown -r 重启
+# shutdown -h 关机
+# shutdown -k 通知其他用户我要关机
+# shutdown -c 取消关机
+# df -a 查看所有磁盘空间
+# df -h 可读的方式查看磁盘空间
+# df -T 查看使用了多少空间
+# du -h 文件名 查看文件站磁盘的大小 大于等于文件大小 
+# du -sh 目录名 查看目录大小 
+# ps 显示当前所有运行的层程序快照
+# ps -ajx 列出所有进程数据 带+的是前台运行的
+# ps -aux 比ajx多一个用户
+# pstree 产生一个进程树
+# top (动态)列出所有进程的cpu和内存使用情况 shift+<>换页 q 退出
+# kill -9 pid 杀死pid号的进程 
+# kill -9 -1 杀死一切进程
