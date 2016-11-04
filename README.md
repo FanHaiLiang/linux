@@ -81,16 +81,31 @@
 ### 下载软件包 不安装 sudo apt-get source  软件包名称    
 # sudo passwd root 修改root密码     
 # 进入root最大权利方法 su -
-# TFTP:端口号69
-# ip地址区分区域网的身份
-# 端口号：区分同一台电脑的不同程序
-# 修改配置文件sudo vi /etc/default/tftpd-hpa
-# 第一行文件的名称
-# 第三行 环境变量 
-# 第四行 fttpboot 上传下载目录 
-# 第五行 端口号
-# 第六行 安全  改成"--secure -c -l"
+# tftp
+### TFTP:端口号69
+### ip地址区分区域网的身份
+### 端口号：区分同一台电脑的不同程序
+## 环境配置
+### 修改配置文件sudo vi /etc/default/tftpd-hpa
+#### 第一行文件的名称
+#### 第三行 环境变量 
+#### 第四行 fttpboot 上传下载目录 
+#### 第五行 端口号
+#### 第六行 安全  改成"--secure -c -l"
+## tftp操作步骤：
+### sudo service tftpd-hpa start 启动服务器
+### tftp 127.0.0.1（自己ip地址）
+### put     上传
+### get     下载
+### quit    退出
+### sudo service tftpd-hpa restart 重启服务
+### sudo service tftpd-hpa stop
+# ifconfig 产看自己ip在地址 
+# 127.0.0.1 带边自己ip
+# chomd 777 目录 修改权限 777表示对所有用户公开（r 4 w 2 x 1）
 
 
-# 第六行 安全  改成"--secure -c -l"
+
+
+
 
