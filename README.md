@@ -117,7 +117,6 @@
 ### sudo service 。 。 。 。 。 。 stop  关闭客户端
 ### mount -t nfs ip地址:/被挂载目录   挂载目录名
 ### umount 挂载目录                   取消挂载
-# 网络文件系统NFS  
 # hostname   主机名    
 # /srv/homes 共享目录
 # SSH
