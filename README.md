@@ -56,3 +56,22 @@
 # top (动态)列出所有进程的cpu和内存使用情况 shift+<>换页 q 退出
 # kill -9 pid 杀死pid号的进程 
 # kill -9 -1 杀死一切进程
+# 应用软件包 后缀都是.deb
+# amd64 在64位操作系统上运行的
+# 本地安装命令
+# sudo dpkg -i 软件包全称.deb 本地安装命令
+# sudo apt-get install -f 解决依赖关系
+# dpkg -s 软件包名称 查看软件包安装状态
+# dpkg -L 软件包名称 查看软件包装到哪个目录里
+# dpkg -r 软件包名称 卸载软件
+# sudo dpkg -P 软件包名称 卸载软件 包括软件相关包
+# 在线安装命令
+# sudo apt-get update 更新本地软件源
+# sudo apt-get install 软件包名称 在线安装命令
+# sudo apt-cache policy 软件包名称 查看软件包安装状态
+# sudo apt-cache show 软件包名称 查看软件包信息（无论有没有安装） 
+# sudo apt-get- remove --purge 软件包名   
+# 卸载软件包 sudo apt-get download 软件包名称        
+# 下载软件包 不安装 sudo apt-get source  软件包名称     
+
+
