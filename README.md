@@ -56,6 +56,7 @@
 # 查看进程
 ### ps 显示当前所有运行的层程序快照
 ### ps -ajx 列出所有进程数据 带+的是前台运行的
+### ps -ajx | grep 想查找内容  得到想找内容的编号
 ### ps -aux 比ajx多一个用户
 ### pstree 产生一个进程树
 ### top (动态)列出所有进程的cpu和内存使用情况 shift+<>换页 q 退出
@@ -92,6 +93,7 @@
 #### 第四行 fttpboot 上传下载目录 
 #### 第五行 端口号
 #### 第六行 安全  改成"--secure -c -l"
+### chmod 777 /var/lib/tftpvoot
 ## tftp操作步骤：
 ### sudo service tftpd-hpa start 启动服务器
 ### tftp 127.0.0.1（自己ip地址）
@@ -103,6 +105,58 @@
 # ifconfig 产看自己ip在地址 
 # 127.0.0.1 带边自己ip
 # chomd 777 目录 修改权限 777表示对所有用户公开（r 4 w 2 x 1）
+# NFS服务器
+### 安装nfs服务端 和 客户端
+### dpkg -s nfs-kernel-server 检查NFS服务器的安装状态
+## 修改环境变量
+### sudo vi /etc/exports 
+### 在最后一行加入/被挂载目录  *(rw,sync,no_subtree_check,no_root_squash)
+## 操作步骤
+### sudo service nfs-kernel-server start  开启客户端
+### sudo service nfs-kernel-server restart  重启客户端
+### sudo service 。 。 。 。 。 。 stop  关闭客户端
+### mount -t nfs ip地址:/被挂载目录   挂载目录名
+### umount 挂载目录                   取消挂载
+# 网络文件系统NFS  
+# hostname   主机名    
+# /srv/homes 共享目录
+# SSH
+### 安装openssh-server(ssh) 服务端 opensh-clien(sshd) 客户端
+### 配置文件目录 /etc/ssh/sshd_config
+### 带#的 去掉#就可以使用 仔细看好内容在去掉
+#### port 设施sshd监听口
+#### ListenAddress 设置sshd服务器绑定的IP地址
+#### HostKey 设置包含计算机私人密匙的文件
+#### ServerKeyBits 定义服务器密匙的位数
+#### LoginGraceTime 设置如果用户不能登录，在切断连接之前服务器需要等待的时间（以秒为单位）
+#### KeyRegenerationInterval 设置在多少秒之后自动重新生成服务器的密匙（如果使用密匙）。重生密匙
+#### PermiRootLogin 设置root能不能用ssh登录。选择yes 最高权限登录他人计算机 危险
+#### X11Forwarding 设置是否允许X11转发
+# ssh操作步骤
+### sudo service sshd start 启动服务
+### sudo service sshd restast 重启服务
+### sudo service sshd stop   
+### ssh 用户名@ip地址或主机名  远程登录别人服务器
+### scp 文件名 用户名@ip地址或主机名:  复制自己文件到别人用户主目录
+### scp -r 用户名@ip地址或主机名:/路径/文件名 . 复制别人目录到自己目录
+# wc的使用
+### wc 输出行的俄个数 单词的个数 字节的个数
+### ls | wc   输出目录下文件   -l  就输出文件个数
+### wc  文件名 输出文件的  行数 单词数  字节个数
+# grep的使用
+### grep 关键字 文件名  查找关键字
+### grep -n 关键字 文件名 找到关键字并显示行号
+### grep -R -n 关键字 .    查找当前目录中包括子目录的所有关键字
+### ps ajx | grep 想查找内容  得到想找内容的编号
+# tree 目录名 以树状显示目录
+# ll  相当于ls -al（不是所有系统都通用）
+# apache web服务器的应用软件
+## 安装 apache的步骤
+### 安装 apache
+### 安装tasksel
+### 输入tasksel
+### 找到 LAMP server 安空格键选中 
+## /etc  配置文件目录 /etc/apache2/ 
 
 
 
