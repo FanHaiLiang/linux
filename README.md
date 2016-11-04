@@ -27,19 +27,20 @@
 # root 超级目录
 # /etc目录下哦都是配置文件
 # exit 退出root
-# liunx组的分类：1.主组 2.附属组
-# vi /ect/passwd 查看用户下配置信息 
-# vi /etc/group 查看分组信息
-# sudo adduser username 创建一个新的用户
-# sudo useradd -s /bin/bash -m -g username 设置密码 sudo passwd username
-# su username 登录一个用户
-# sudo userrmod -s /bin/bash -G group1,group2 username 更改用户组
-# sudo gpasswd -a username groupname 添加一个用户到一个组
-# sudo gpasswd -d username groupname 测删除组中用户
-# sudo passwd username 修改用户密码
-# sudo passwd root 修改root密码
-# sudo deluser username 删除一个用户不善目录
-# sudo deluser username --remove-home 删除组中的用户连同目录一起
+# 用户和组方面
+## liunx组的分类：1.主组 2.附属组
+## vi /ect/passwd 查看用户下配置信息 
+## vi /etc/group 查看分组信息
+## sudo adduser username 创建一个新的用户
+## sudo useradd -s /bin/bash -m -g username 设置密码 sudo passwd username
+## su username 登录一个用户
+## sudo userrmod -s /bin/bash -G group1,group2 username 更改用户组
+## sudo gpasswd -a username groupname 添加一个用户到一个组
+## sudo gpasswd -d username groupname 测删除组中用户
+## sudo passwd username 修改用户密码
+## sudo passwd root 修改root密码
+## sudo deluser username 删除一个用户不善目录
+## sudo deluser username --remove-home 删除组中的用户连同目录一起
 # shutdown -r 重启
 # shutdown -h 关机
 # shutdown -k 通知其他用户我要关机
@@ -72,6 +73,20 @@
 # sudo apt-cache show 软件包名称 查看软件包信息（无论有没有安装） 
 # sudo apt-get- remove --purge 软件包名   
 # 卸载软件包 sudo apt-get download 软件包名称        
-# 下载软件包 不安装 sudo apt-get source  软件包名称     
+# 下载软件包 不安装 sudo apt-get source  软件包名称 
+# 激活root   
+# sudo passwd root 修改root密码     
+# 进入root最大权利方法 su -
+# TFTP:端口号69
+# ip地址区分区域网的身份
+# 端口号：区分同一台电脑的不同程序
+# 修改配置文件sudo vi /etc/default/tftpd-hpa
+# 第一行文件的名称
+# 第三行 环境变量 
+# 第四行 fttpboot 上传下载目录 
+# 第五行 端口号
+# 第六行 安全  改成"--secure -c -l"
 
+
+# 第六行 安全  改成"--secure -c -l"
 
