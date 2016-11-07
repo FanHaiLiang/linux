@@ -41,18 +41,22 @@
 ### sudo passwd root 修改root密码
 ### sudo deluser username 删除一个用户不善目录
 ### sudo deluser username --remove-home 删除组中的用户连同目录一起
+
 # 开关机
 ### shutdown -r 重启
 ### shutdown -h 关机
 ### shutdown -k 通知其他用户我要关机
 ### shutdown -c 取消关机
+
 # 查看磁盘空间
 ### df -a 查看所有磁盘空间
 ### df -h 可读的方式查看磁盘空间
 ### df -T 查看使用了多少空间
+
 # 查看文件目录大小
 ### du -h 文件名 查看文件站磁盘的大小 大于等于文件大小 
 ### du -sh 目录名 查看目录大小
+
 # 查看进程
 ### ps 显示当前所有运行的层程序快照
 ### ps -ajx 列出所有进程数据 带+的是前台运行的
@@ -62,6 +66,7 @@
 ### top (动态)列出所有进程的cpu和内存使用情况 shift+<>换页 q 退出
 ### kill -9 pid 杀死pid号的进程 
 ##3 kill -9 -1 杀死一切进程
+
 # 本地和在线安装
 ## 应用软件包 后缀都是.deb
 ## amd64 在64位操作系统上运行的
@@ -79,9 +84,11 @@
 ### sudo apt-cache show 软件包名称 查看软件包信息（无论有没有安装） 
 ### sudo apt-get- remove --purge 软件包名   
 ### 卸载软件包 sudo apt-get download 软件包名称        
-### 下载软件包 不安装 sudo apt-get source  软件包名称    
+### 下载软件包 不安装 sudo apt-get source  软件包名称  
+
 # sudo passwd root 修改root密码     
 # 进入root最大权利方法 su -
+
 # tftp
 ### TFTP:端口号69
 ### ip地址区分区域网的身份
@@ -102,9 +109,11 @@
 ### quit    退出
 ### sudo service tftpd-hpa restart 重启服务
 ### sudo service tftpd-hpa stop
+
 # ifconfig 产看自己ip在地址 
 # 127.0.0.1 带边自己ip
 # chomd 777 目录 修改权限 777表示对所有用户公开（r 4 w 2 x 1）
+
 # NFS服务器
 ### 安装nfs服务端 和 客户端
 ### dpkg -s nfs-kernel-server 检查NFS服务器的安装状态
@@ -117,8 +126,10 @@
 ### sudo service 。 。 。 。 。 。 stop  关闭客户端
 ### mount -t nfs ip地址:/被挂载目录   挂载目录名
 ### umount 挂载目录                   取消挂载
+
 # hostname   主机名    
 # /srv/homes 共享目录
+
 # SSH
 ### 安装openssh-server(ssh) 服务端 opensh-clien(sshd) 客户端
 ### 配置文件目录 /etc/ssh/sshd_config
@@ -138,17 +149,21 @@
 ### ssh 用户名@ip地址或主机名  远程登录别人服务器
 ### scp 文件名 用户名@ip地址或主机名:  复制自己文件到别人用户主目录
 ### scp -r 用户名@ip地址或主机名:/路径/文件名 . 复制别人目录到自己目录
+
 # wc的使用
 ### wc 输出行的俄个数 单词的个数 字节的个数
 ### ls | wc   输出目录下文件   -l  就输出文件个数
 ### wc  文件名 输出文件的  行数 单词数  字节个数
+
 # grep的使用
 ### grep 关键字 文件名  查找关键字
 ### grep -n 关键字 文件名 找到关键字并显示行号
 ### grep -R -n 关键字 .    查找当前目录中包括子目录的所有关键字
 ### ps ajx | grep 想查找内容  得到想找内容的编号
+
 # tree 目录名 以树状显示目录
 # ll  相当于ls -al（不是所有系统都通用）
+
 # apache web服务器的应用软件
 ## 安装 apache的步骤
 ### 安装 apache
