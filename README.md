@@ -41,7 +41,7 @@
 ### sudo passwd root 修改root密码
 ### sudo deluser username 删除一个用户不善目录
 ### sudo deluser username --remove-home 删除组中的用户连同目录一起
-
+#   
 # 开关机
 ### shutdown -r 重启
 ### shutdown -h 关机
