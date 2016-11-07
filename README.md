@@ -11,6 +11,7 @@
 # man 查看命令手册
 # mkdir 创建目录
 #
+#
 # gzip 压缩
 # gunzip 解压
 # bzip2 压缩
@@ -19,6 +20,7 @@
 #      -xzvf 压缩文件名    解压
     * -czvf (c:创建一个压缩 z:压缩格式.gz J用压缩格式为.xz 随压缩格式字幕改变 v:压缩过程 f:压缩后压缩文件名)
     * -xzvf (x 解压命令) -xvf 解压所有类型
+#
 #   
 # shell通配符   
 ###  *用于匹配任意长度的字符
@@ -26,10 +28,12 @@
 ###  【】用于匹配指定的一个字符
 ###   ^用于在【】中进行字符过滤
 #
+#
 # home 目录下都是普通目录
 # root 超级目录
 # /etc目录下哦都是配置文件
 # exit 退出root
+#
 #
 # 用户和组方面
 ### liunx组的分类：1.主组 2.附属组
@@ -45,6 +49,7 @@
 ### sudo passwd root 修改root密码
 ### sudo deluser username 删除一个用户不善目录
 ### sudo deluser username --remove-home 删除组中的用户连同目录一起
+#
 #   
 # 开关机
 ### shutdown -r 重启
@@ -52,14 +57,17 @@
 ### shutdown -k 通知其他用户我要关机
 ### shutdown -c 取消关机
 #
+#
 # 查看磁盘空间
 ### df -a 查看所有磁盘空间
 ### df -h 可读的方式查看磁盘空间
 ### df -T 查看使用了多少空间
 #
+#
 # 查看文件目录大小
 ### du -h 文件名 查看文件站磁盘的大小 大于等于文件大小 
 ### du -sh 目录名 查看目录大小
+#
 #
 # 查看进程
 ### ps 显示当前所有运行的层程序快照
@@ -70,6 +78,7 @@
 ### top (动态)列出所有进程的cpu和内存使用情况 shift+<>换页 q 退出
 ### kill -9 pid 杀死pid号的进程 
 ##3 kill -9 -1 杀死一切进程
+#
 #
 # 本地和在线安装
 ## 应用软件包 后缀都是.deb
@@ -88,10 +97,12 @@
 ### sudo apt-cache show 软件包名称 查看软件包信息（无论有没有安装） 
 ### sudo apt-get- remove --purge 软件包名   
 ### 卸载软件包 sudo apt-get download 软件包名称        
-### 下载软件包 不安装 sudo apt-get source  软件包名称  
+### 下载软件包 不安装 sudo apt-get source  软件包名称 
+#
 #
 # sudo passwd root 修改root密码     
 # 进入root最大权利方法 su -
+#
 #
 # tftp
 ### TFTP:端口号69
@@ -114,9 +125,11 @@
 ### sudo service tftpd-hpa restart 重启服务
 ### sudo service tftpd-hpa stop
 #
+#
 # ifconfig 产看自己ip在地址 
 # 127.0.0.1 带边自己ip
 # chomd 777 目录 修改权限 777表示对所有用户公开（r 4 w 2 x 1）
+#
 #
 # NFS服务器
 ### 安装nfs服务端 和 客户端
@@ -131,8 +144,10 @@
 ### mount -t nfs ip地址:/被挂载目录   挂载目录名
 ### umount 挂载目录                   取消挂载
 #
+#
 # hostname   主机名    
 # /srv/homes 共享目录
+#
 #
 # SSH
 ### 安装openssh-server(ssh) 服务端 opensh-clien(sshd) 客户端
@@ -154,10 +169,12 @@
 ### scp 文件名 用户名@ip地址或主机名:  复制自己文件到别人用户主目录
 ### scp -r 用户名@ip地址或主机名:/路径/文件名 . 复制别人目录到自己目录
 #
+#
 # wc的使用
 ### wc 输出行的俄个数 单词的个数 字节的个数
 ### ls | wc   输出目录下文件   -l  就输出文件个数
 ### wc  文件名 输出文件的  行数 单词数  字节个数
+#
 #
 # grep的使用
 ### grep 关键字 文件名  查找关键字
@@ -166,8 +183,10 @@
 ### ps ajx | grep 想查找内容  得到想找内容的编号
 ### grep -e "\b查找内容\b" 精确查找一个单词
 #
+#
 # tree 目录名 以树状显示目录
 # ll  相当于ls -al（不是所有系统都通用）
+#
 #
 # apache web服务器的应用软件
 ## 安装 apache的步骤
